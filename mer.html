@@ -1,9 +1,53 @@
-<html>
-    <head>
-        <title>git hub</title>
-    </head>
-    <body>
-        <h1 style="color:red ">HI iam Rohith Gowda BM</h1> 
-        <p> we are excited to do coding</p>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Registration</title>
+</head>
+<body>
+  <header>
+    <h1>Student Registration Form</h1>
+  </header>
+
+  <main>
+    <form action="/submit" method="post">
+      <fieldset>
+        <legend>Basic Info</legend>
+
+        <label>Name: <input type="text" name="name" required></label><br>
+        <label>Email: <input type="email" name="email"></label><br>
+        <label>Date of Birth: <input type="date" name="dob"></label><br>
+        <label>Password: <input type="password" name="password"></label><br>
+        <label>Bio:<br><textarea name="bio" rows="3" cols="30"></textarea></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Education Details</legend>
+
+        <label>Course:
+          <select name="course">
+            <option>B.Tech</option>
+            <option>B.Sc</option>
+            <option>B.Com</option>
+            <option>BA</option>
+            <option>MBA</option>
+          </select>
+        </label><br>
+
+        <label>Interest Level: <input type="range" min="1" max="10" name="interest"></label><br>
+
+        <label>Gender:</label>
+        <label><input type="radio" name="gender" value="male"> Male</label>
+        <label><input type="radio" name="gender" value="female"> Female</label>
+        <label><input type="radio" name="gender" value="other"> Other</label><br>
+
+        <label><input type="checkbox" name="terms" required> I accept terms</label>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+
+  <footer><p>&copy; 2025 University Portal</p></footer>
+</body>
 </html>
